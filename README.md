@@ -19,7 +19,7 @@ I started by exploring the web page to understand its layout and possible vulner
 To confirm any possible vulnerabilities, I began testing the search bar with random inputs.  
 I entered a single quote (`'`) to test for SQL injection vulnerability. The result was an error message:
 
-![Alt Text](first.jpg)
+![Alt Text](third.jpg)
 
   pq: operator is not unique: unknown % unknown
   
@@ -40,7 +40,7 @@ At this point, it became clear that the database query might be missing a closin
     ') OR 1=1 --
   
   When I executed this, the query bypassed the filter, and the page returned all the cat meme data, confirming the vulnerability!
-![Alt Text](final.jpg)
+![Alt Text](first.jpg)
 
 ## Retrieving the Flag
   Scrolling through the list of memes, I noticed that the first image contained the flag. The flag was clearly displayed in the image description:
